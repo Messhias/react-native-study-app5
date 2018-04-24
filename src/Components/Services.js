@@ -12,23 +12,24 @@ import NavBar from './NavBar';
 
 const companyImage = require('../img/detalhe_empresa.png');
 
-export default class Company extends Component {
+export default class Services extends Component {
 
     render() {
         const { navigator } = this.props;
         return (
               <View>
                   <StatusBar
-                      backgroundColor='#CCC'
+                      backgroundColor='#19D1C8'
                   />
                   <NavBar
                       back
+                      backColor='#19D1C8'
                       navigator={navigator}
                   />
 
                   <View style={styles.header}>
                       <Image source={companyImage} />
-                      <Text style={styles.title}>A empresa</Text>
+                      <Text style={styles.title}>Serviços</Text>
                   </View>
 
                   <View style={styles.contactDetail}>
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     },
     title: {
         fontSize: 20,
-        color: '#EC7148',
+        color: '#19D1C8',
         marginLeft: 10,
         marginTop: 25
     },

@@ -18,11 +18,17 @@ export default class NavBar extends Component {
         } = this.props;
         if (back) {
             return (
-                <View style={styles.titleBar}>
+                <View
+                    style={[styles.titleBar, {
+                        backgroundColor: this.props.backColor
+                    }]}
+                >
                     <TouchableHighlight
                         onPress={() => {
                             navigator.pop();
                         }}
+                        underlayColor={this.props.backColor}
+                        activeOpacity={0.3}
                     >
                         <Image source={backImage} />
                     </TouchableHighlight>

@@ -19,10 +19,11 @@ export default class Company extends Component {
         return (
               <View>
                   <StatusBar
-                      backgroundColor='#CCC'
+                      backgroundColor='#EC7148'
                   />
                   <NavBar
                       back
+                      backColor='#EC7148'
                       navigator={navigator}
                   />
 

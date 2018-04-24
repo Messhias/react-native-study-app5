@@ -34,6 +34,8 @@ export default class Home extends Component {
                   <View style={styles.menu}>
                     <View style={styles.menuGroup}>
                         <TouchableHighlight
+                            underlayColor={'#B9C941'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 navigator.push({ id: 'b' });
                             }}
@@ -42,6 +44,8 @@ export default class Home extends Component {
                         </TouchableHighlight>
 
                         <TouchableHighlight
+                            underlayColor={'#61BD8C'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 navigator.push({ id: 'c' });
                             }}
@@ -52,13 +56,23 @@ export default class Home extends Component {
                     </View>
                     <View style={styles.menuGroup}>
                         <TouchableHighlight
+                            underlayColor={'#EC7148'}
+                            activeOpacity={0.3}
                             onPress={() => {
                                 navigator.push({ id: 'd' });
                             }}
                         >
                             <Image style={styles.imgMenu} source={companyMenu} />
                         </TouchableHighlight>
-                        <Image style={styles.imgMenu} source={serviceMenu} />
+                        <TouchableHighlight
+                            underlayColor={'#19D1C8'}
+                            activeOpacity={0.3}
+                            onPress={() => {
+                                navigator.push({ id: 's' });
+                            }}
+                        >
+                            <Image style={styles.imgMenu} source={serviceMenu} />
+                        </TouchableHighlight>
                     </View>
                   </View>
 

@@ -14,6 +14,7 @@ import Client from './src/Components/Client';
 import Home from './src/Components/Home';
 import Contact from './src/Components/Contact';
 import Company from './src/Components/Company';
+import Services from './src/Components/Services';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -36,6 +37,10 @@ export default class App extends Component<Props> {
 
                 if (route.id === 'd') {
                     return (<Company navigator={navigator} />);
+                }
+
+                if (route.id === 's') {
+                    return (<Services navigator={navigator} />);
                 }
             }}
         />

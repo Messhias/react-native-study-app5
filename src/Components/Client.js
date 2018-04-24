@@ -21,9 +21,10 @@ export default class Client extends Component {
         return (
               <View>
                   <StatusBar
-                      backgroundColor='#CCC'
+                      backgroundColor='#B9C941'
                   />
                   <NavBar
+                      backColor='#B9C941'
                       back
                       navigator={navigator}
                   />

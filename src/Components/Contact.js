@@ -19,11 +19,12 @@ export default class Contact extends Component {
         return (
               <View>
                   <StatusBar
-                      backgroundColor='#CCC'
+                      backgroundColor='#61BD8C'
                   />
                   <NavBar
                       back
                       navigator={navigator}
+                      backColor='#61BD8C'
                   />
 
                   <View style={styles.header}>
